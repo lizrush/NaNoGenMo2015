@@ -1,0 +1,10 @@
+https://algorithmia.com/algorithms/ngram/GenerateTrigramFrequencies
+https://algorithmia.com/algorithms/StanfordNLP/SentenceSplit
+https://algorithmia.com/algorithms/ngram/RandomTextFromTrigram
+
+
+
+
+https://algorithmia.com/algorithms/diego/WordFrequencyCounter
+https://algorithmia.com/algorithms/nlp/ProfanityDetection
+https://algorithmia.com/algorithms/nlp/KeywordsForDocumentSet
