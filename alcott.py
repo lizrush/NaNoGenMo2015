@@ -7,18 +7,18 @@ generate_trigrams 	= client.algo('ngram/GenerateTrigramFrequencies/0.1.1')
 text_from_trigram	= client.algo('ngram/RandomTextFromTrigram/0.1.1')
 
 corpus 	= []
-rootdir = './books/BF authors'
+rootdir = './books/WF authors'
 
 for subdir, dirs, files in os.walk(rootdir):
   for filename in files:
-    with open('./books/BF authors/' + filename, 'r') as content_file:
+    with open('./books/WF authors/' + filename, 'r') as content_file:
       input = content_file.read()
       sentences = sentence_split.pipe(input)
       corpus.extend(sentences)
 
 
 #  generate trigrams
-input = [corpus, "xxBeGiN142xx", "xxEnD142xx", "data://.algo/ngram/GenerateTrigramFrequencies/temp/trigrams-BF.txt"]
+input = [corpus, "xxBeGiN142xx", "xxEnD142xx", "data://.algo/ngram/GenerateTrigramFrequencies/temp/trigrams-WF.txt"]
 trigrams_file = generate_trigrams.pipe(input)
 
 # generate sentence
