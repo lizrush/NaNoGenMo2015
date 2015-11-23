@@ -1,10 +1,10 @@
 import Algorithmia
 import os
 
-client = Algorithmia.client('simG4c7kU+Seay4VpjAP3MSovuR1')
-sentence_split		= client.algo('StanfordNLP/SentenceSplit/0.1.0')
-generate_trigrams 	= client.algo('ngram/GenerateTrigramFrequencies/0.1.1')
-text_from_trigram	= client.algo('ngram/RandomTextFromTrigram/0.1.1')
+client             = Algorithmia.client('simG4c7kU+Seay4VpjAP3MSovuR1')
+sentence_split     = client.algo('StanfordNLP/SentenceSplit/0.1.0')
+generate_trigrams  = client.algo('ngram/GenerateTrigramFrequencies/0.1.1')
+text_from_trigram	 = client.algo('ngram/RandomTextFromTrigram/0.1.1')
 
 corpus 	= []
 rootdir = './books/BF authors'
