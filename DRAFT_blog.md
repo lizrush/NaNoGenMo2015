@@ -15,3 +15,56 @@ In the NaNoGenMo world, "novel" is pretty loosely defined. According to the rule
 Novel generation can be much more complicated than it appears from the outside. [Some books](https://github.com/dariusk/NaNoGenMo-2014/issues/51) integrate with social media by pulling text from twitter to generate dialogue, [others](https://github.com/samcoppini/Definition-book) go down a recursive rabbithole, and some even generate [graphic novels](http://gregborenstein.com/comics/generated_detective/1/). 
 
 Here at Algorithmia, we have a wide variety of algorithms that are a perfect fit for NaNoGenMo. Because I don't have any background in natural language processing or computational linguistics, I found it was easy to combine algorithms to not only help me generate my novel, but gain insights on the texts I used as a basis and the result. 
+
+
+I chose the texts I wanted to work with based on two things: availability in the public domain and to have an interesting author demographic. While there are tons of NaNoGenMo books out there that are based on other texts, the unfortunate truth is that I see very few that are based on female or minority authors. I also developed an interest in 19th century American literature, slave and emancipation narratives in particular, after reading Uncle Tom's Cabin when I was 12. Luckily for me, Project Gutenberg is home to many novels and autobiographies that fit this intersection of interests! 
+
+First step: compile a corpus of texts. I chose to go with two sets of 8 books to compare. The first set was composed of 
+
+Set one:
+* 1859 - Our Nig by Harriet E. Wilson
+* 1861 - Incidents in the Life of a Slave Girl by Harriet Jacobs
+* 1868 to 1888 (published in serial form) - Trial and Triumph by Frances Ellen Watkins Harper
+* 1868 to 1888 (published in serial form) - Sowing and Reaping: A Temperance Story by Frances Ellen Watkins Harper
+* 1868 to 1888 (published in serial form) - Minnie's Sacrifice by Frances Ellen Watkins Harper
+* 1868 - Behind the Scenes by Elizabeth Keckley
+* 1891 - From the Darkness Cometh the Light, or, Struggles for Freedom by Lucy Delaney
+* 1892 - Iola Leroy, or Shadows Uplifted by Frances Ellen Watkins Harper
+
+Set two:
+* 1845 - Woman in the Nineteenth Century by Margaret Fuller
+* 1852 - Uncle Tom's Cabin by Harriet Beecher Stowe
+* 1854 - The Lamplighter by Maria S. Cummins
+* 1854 - Ruth Hall: A Domestic Tale of the Present Time by Fanny Fern (pen name of Sara Payson Willis)
+* 1860 - Rutledge by Miriam Coles Harris
+* 1868 - Little Women by Louisa May Alcott
+* 1869 to 1870 (published in serial form) - An Old Fashioned Girl by Louisa May Alcott
+* 1872 - What Katy Did by Susan Coolidge
+* 1885 - The Prophet of the Great Smoky Mountains by Charles Egbert Craddock (pen name of Mary Noailles Murfree)
+
+
+Second, clean the texts (I used [guten-gutter](https://github.com/catseye/Guten-gutter)). Then I had to escape " marks so that I could run algos that take text inputs.
+
+
+AUTOTAG:
+black authors
+['dsdb', 'bud']
+['mrs', 'lincoln', 'president', 'day', 'house', 'mother', 'room', 'time']
+['mother', 'mrs', 'time', 'judge', 'mitchell', 'freedom', 'free', 'girl']
+['children', 'grandmother', 'told', 'master', 'slave', 'house', 'day', 'time']
+['war', 'robert', 'iola', 'mother', 'dat', 'good', 'ter', 'ole']
+['louis', 'minnie', 'child', 'colored', 'home', 'race', 'mother', 'people']
+['belle', 'life', 'mother', 'home', 'romaine', 'jeanette', 'man', 'john']
+['annette', 'mrs', 'life', 'young', 'men', 'people', 'man', 'thomas']
+white authors
+['meg', 'amy', 'laurie', 'good', 'beth', 'mother', 'time', 'made']
+['ter', 'hev', 'war', 'air', 'man', 'fur', 'thar', 'eyes']
+['ruth', 'doctor', 'katy', 'mrs', 'time', 'eyes', 'nettie', 'lady']
+['rutledge', 'mrs', 'kitty', 'time', 'room', 'back', 'door', 'made']
+['gertrude', 'emily', 'mrs', 'gerty', 'miss', 'willie', 'time', 'graham']
+['tom', 'man', 'miss', 'clare', 'good', 'ophelia', 'george', 'child']
+['katy', 'aunt', 'izzie', 'clover', 'cousin', 'children', 'helen', 'elsie']
+['woman', 'man', 'life', 'men', 'women', 'love', 'thought', 'nature']
+
+Want to try NLP youself? Check out the [NLTK book](http://www.nltk.org/book/) to get up and running in python.
+
