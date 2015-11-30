@@ -1,0 +1,44 @@
+behind_the_scenes.txt
+mrs, lincoln, president, day, house, mother, room, time
+
+from_the_darkness.txt
+mother, mrs, time, judge, mitchell, freedom, free, girl
+
+incidents.txt
+children, grandmother, told, master, slave, house, day, time
+
+iola_leroy_harper.txt
+war, robert, iola, mother, dat, good, ter, ole
+
+little_women.txt
+meg, amy, laurie, good, beth, mother, time, made
+
+minnies_sacrifice.txt
+louis, minnie, child, colored, home, race, mother, people
+
+prophet_smoky_mountains.txt
+ter, hev, war, air, man, fur, thar, eyes
+
+ruth_hall.txt
+ruth, doctor, katy, mrs, time, eyes, nettie, lady
+
+rutledge.txt
+rutledge, mrs, kitty, time, room, back, door, made
+
+sowing.txt
+belle, life, mother, home, romaine, jeanette, man, john
+
+the_lamplighter.txt
+gertrude, emily, mrs, gerty, miss, willie, time, graham`
+
+trial_and_triumph.txt
+annette, mrs, life, young, men, people, man, thomas
+
+uncle_toms_cabin.txt
+tom, man, miss, clare, good, ophelia, george, child
+
+what_katy_did.txt
+katy, aunt, izzie, clover, cousin, children, helen, elsie
+
+woman_in_19th.txt
+woman, man, life, men, women, love, thought, nature

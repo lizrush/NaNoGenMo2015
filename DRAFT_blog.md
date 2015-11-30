@@ -4,22 +4,22 @@ Internet artist Darius Kazemi started NaNoGenMo after tweeting the idea in 2013:
 
 [embed the tweet here https://twitter.com/tinysubversions/status/396305662000775168]
 
-This November is the third organized installment of NaNoGenMo and the community keeps growing every year as mor and more programmers & artists become interested in the strange intersection of tech, language processing, and literature. And because the event is primarily driven by developers, submissions are posted on a Github repo as Issues so that participants can comment on one another's ideas and help each other create some of the most unique and sometimes nonsensical novels written in November. 
+This November is the third organized installment of NaNoGenMo and the community keeps growing every year as mor and more programmers & artists become interested in the strange intersection of tech, language processing, and literature. And because the event is primarily driven by developers, submissions are posted on a Github repo as Issues so that participants can comment on one another's ideas and help each other create some of the most unique and sometimes nonsensical novels written in November.
 
-In the NaNoGenMo world, "novel" is pretty loosely defined. According to the rules, 
+In the NaNoGenMo world, "novel" is pretty loosely defined. According to the rules,
 
-> "The “novel” is defined however you want. It could be 50,000 repetitions of the word “meow”. It could literally grab a random novel from Project Gutenberg. It doesn’t matter, as long as it’s 50k+ words." 
+> "The “novel” is defined however you want. It could be 50,000 repetitions of the word “meow”. It could literally grab a random novel from Project Gutenberg. It doesn’t matter, as long as it’s 50k+ words."
 
 (And of course, someone *did* make that [50,000 word "meow" book](https://github.com/dariusk/NaNoGenMo-2014/issues/50) in 2014!)
 
-Novel generation can be much more complicated than it appears from the outside. [Some books](https://github.com/dariusk/NaNoGenMo-2014/issues/51) integrate with social media by pulling text from twitter to generate dialogue, [others](https://github.com/samcoppini/Definition-book) go down a recursive rabbithole, and some even generate [graphic novels](http://gregborenstein.com/comics/generated_detective/1/). 
+Novel generation can be much more complicated than it appears from the outside. [Some books](https://github.com/dariusk/NaNoGenMo-2014/issues/51) integrate with social media by pulling text from twitter to generate dialogue, [others](https://github.com/samcoppini/Definition-book) go down a recursive rabbithole, and some even generate [graphic novels](http://gregborenstein.com/comics/generated_detective/1/).
 
-Here at Algorithmia, we have a wide variety of algorithms that are a perfect fit for NaNoGenMo. Because I don't have any background in natural language processing or computational linguistics, I found it was easy to combine algorithms to not only help me generate my novel, but gain insights on the texts I used as a basis and the result. 
+Here at Algorithmia, we have a wide variety of algorithms that are a perfect fit for NaNoGenMo. Because I don't have any background in natural language processing or computational linguistics, I found it was easy to combine algorithms to not only help me generate my novel, but gain insights on the texts I used as a basis and the result.
 
 
-I chose the texts I wanted to work with based on two things: availability in the public domain and to have an interesting author demographic. While there are tons of NaNoGenMo books out there that are based on other texts, the unfortunate truth is that I see very few that are based on female or minority authors. I also developed an interest in 19th century American literature, slave and emancipation narratives in particular, after reading Uncle Tom's Cabin when I was 12. Luckily for me, Project Gutenberg is home to many novels and autobiographies that fit this intersection of interests! 
+I chose the texts I wanted to work with based on two things: availability in the public domain and to have an interesting author demographic. While there are tons of NaNoGenMo books out there that are based on other texts, the unfortunate truth is that I see very few that are based on female or minority authors. I also developed an interest in 19th century American literature, slave and emancipation narratives in particular, after reading Uncle Tom's Cabin when I was 12. Luckily for me, Project Gutenberg is home to many novels and autobiographies that fit this intersection of interests!
 
-First step: compile a corpus of texts. I chose to go with two sets of 8 books to compare. The first set was composed of 
+First step: compile a corpus of texts. I chose to go with two sets of 8 books to compare. The first set was composed of
 
 Set one:
 * 1859 - Our Nig by Harriet E. Wilson
@@ -65,6 +65,41 @@ white authors
 ['tom', 'man', 'miss', 'clare', 'good', 'ophelia', 'george', 'child']
 ['katy', 'aunt', 'izzie', 'clover', 'cousin', 'children', 'helen', 'elsie']
 ['woman', 'man', 'life', 'men', 'women', 'love', 'thought', 'nature']
+
+
+Sentiment analysis
+behind_the_scenes.txt
+3
+from_the_darkness.txt
+1
+incidents.txt
+1
+iola_leroy_harper.txt
+1
+little_women.txt
+1
+minnies_sacrifice.txt
+1
+prophet_smoky_mountains.txt
+3
+ruth_hall.txt
+2
+rutledge.txt
+0
+sowing.txt
+1
+the_lamplighter.txt
+1
+trial_and_triumph.txt
+1
+uncle_toms_cabin.txt
+1
+what_katy_did.txt
+1
+woman_in_19th.txt
+1
+
+
 
 Want to try NLP youself? Check out the [NLTK book](http://www.nltk.org/book/) to get up and running in python.
 

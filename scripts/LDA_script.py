@@ -6,12 +6,12 @@ LDA_algo    = client.algo('mallet/LDA')
 
 
 corpus 	= []
-rootdir = './clean_books/white_authors/'
+rootdir = './clean_books/'
 
 for subdir, dirs, files in os.walk(rootdir):
   for filename in files:
-    with open('./clean_books/white_authors/' + filename, 'r') as content_file:     
-      corpus.extend(content_file.read())	
+    with open('./clean_books/' + filename, 'r') as content_file:
+      corpus.extend(content_file.read())
 
 input = [corpus, 5]
 LDA_result = LDA_algo.pipe(input)
