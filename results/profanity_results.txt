@@ -1,47 +1,297 @@
 behind_the_scenes.txt
 
-{'ass': 199, 'arse': 1, 'hoe': 4, 'vag': 9, 'tit': 15, 'muff': 1, 'negro': 9, 'snatch': 1, 'spic': 4, 'asses': 4, 'cum': 9}
+ass: 199 (none found in text)
+arse: 1 (hearse)
+hoe: 4 (none)
+vag: 9 (none)
+tit: 15 (none)
+muff: 1 (one: clothing reference)
+negro: 9
+snatch: 1 (none offensive)
+spic: 4 (none)
+asses: 4 (none)
+cum: 9 (dialect: "While I was eating, the cook remarked: "I declar, I nebber did see
+people carry on so. Wonder if I should go off and stay two or three
+years, if all ob you wud hug and kiss me so when I cum back?"")
+
 
 from_the_darkness.txt
 
-{'ass': 17, 'hoe': 1, 'tit': 4, 'gooch': 1, 'negro': 13, 'tard': 1, 'nigger': 4, 'cum': 3}
+ass: 17
+hoe: 1
+tit: 4
+gooch: 1
+negro: 13
+tard: 1
+nigger: 4
+cum: 3
 
 incidents.txt
-{'ass': 179, 'arse': 4, 'bastard': 1, 'hoe': 5, 'vag': 5, 'niggers': 13, 'cracker': 6, 'nigger': 29, 'negro': 19, 'tard': 2, 'spic': 25, 'asses': 1, 'tit': 36, 'damn': 9, 'muff': 1, 'cum': 34, 'snatch': 3, 'poon': 2, 'coon': 1, 'chink': 1}
+ass: 179
+arse: 4
+bastard: 1
+hoe: 5
+vag: 5
+niggers: 13
+cracker: 6
+nigger: 29
+negro: 19
+tard: 2
+spic: 25
+asses: 1
+tit: 36
+damn: 9
+muff: 1
+cum: 34
+snatch: 3
+poon: 2
+coon: 1
+chink: 1
+
 
 iola_leroy_harper.txt
-{'ass': 96, 'arse': 44, 'hoe': 3, 'vag': 3, 'hard on': 1, 'niggers': 9, 'dick': 3, 'nigger': 14,
-'negro': 38, 'snatch': 3, 'heeb': 2, 'spic': 4, 'asses': 1, 'tit': 20, 'cum': 6, 'cock': 1}
+ass: 96
+arse: 44
+hoe: 3
+vag: 3
+hard on: 1
+niggers: 9
+dick: 3
+nigger: 14
+negro: 38
+snatch: 3
+heeb: 2
+spic: 4
+asses: 1
+tit: 20
+cum: 6
+cock: 1
 
 little_women.txt
-{'pussy': 1, 'queer': 34, 'hoe': 21, 'pussies': 2, 'tit': 71, 'dick': 7, 'vag': 14, 'hard on': 6, 'asses': 9, 'cum': 15, 'dicks': 1, 'ass': 240, 'anus': 11, 'prick': 8, 'snatch': 3, 'spic': 20, 'poon': 5, 'arse': 7, 'spick': 1, 'cracker': 1, 'muff': 10, 'asshopper': 3, 'cock': 21}
+pussy: 1
+queer: 34
+hoe: 21
+pussies: 2
+tit: 71
+dick: 7
+vag: 14
+hard on: 6
+asses: 9
+cum: 15
+dicks: 1
+ass: 240
+anus: 11
+prick: 8
+snatch: 3
+spic: 20
+poon: 5
+arse: 7
+spick: 1
+cracker: 1
+muff: 10
+asshopper: 3
+cock: 21
 
 minnies_sacrifice.txt
-{'ass': 96, 'arse': 7, 'hoe': 3, 'niggers': 4, 'nigger': 11, 'negro': 23, 'spic': 1, 'asses': 2, 'tit': 11, 'cum': 4}
+ass: 96
+arse: 7
+hoe: 3
+niggers: 4
+nigger: 11
+negro: 23
+spic: 1
+asses: 2
+tit: 11
+cum: 4
 
 prophet_smoky_mountains.txt
-{'ass': 137, 'arse': 9, 'hoe': 30, 'prick': 1, 'skeet': 1, 'hard on': 1, 'vag': 41, 'cock': 3, 'muff': 2, 'fag': 1, 'spic': 7, 'asses': 1, 'tit': 28, 'damn': 5, 'asshopper': 3, 'mick': 2, 'cum': 11, 'tard': 3, 'pecker': 1, 'coon': 1}
+ass: 137
+arse: 9
+hoe: 30
+prick: 1
+skeet: 1
+hard on: 1
+vag: 41
+cock: 3
+muff: 2
+fag: 1
+spic: 7
+asses: 1
+tit: 28
+damn: 5
+asshopper: 3
+mick: 2
+cum: 11
+tard: 3
+pecker: 1
+coon: 1
 
 ruth_hall.txt
-{'nigga': 1, 'pussy': 1, 'homo': 5, 'queer': 5, 'hoe': 25, 'niggers': 1, 'dick': 6, 'vag': 5, 'tard': 4, 'asses': 5, 'pollock': 1, 'damn': 1, 'muff': 4, 'cum': 26, 'ass': 126, 'anus': 2, 'prick': 1, 'negro': 1, 'snatch': 3, 'spick': 1, 'poon': 7, 'chink': 1, 'arse': 6, 'spic': 5, 'tit': 38, 'nigger': 2, 'cock': 3}
+nigga: 1
+pussy: 1
+homo: 5
+queer: 5
+hoe: 25
+niggers: 1
+dick: 6
+vag: 5
+tard: 4
+asses: 5
+pollock: 1
+damn: 1
+muff: 4
+cum: 26
+ass: 126
+anus: 2
+prick: 1
+negro: 1
+snatch: 3
+spick: 1
+poon: 7
+chink: 1
+arse: 6
+spic: 5
+tit: 38
+nigger: 2
+cock: 3
 
 rutledge.txt
-{'ass': 325, 'arse': 9, 'bastard': 1, 'hoe': 16, 'vag': 17, 'tit': 75, 'cock': 2, 'dick': 1, 'muff': 2, 'tard': 6, 'spic': 24, 'asses': 11, 'damn': 7, 'queer': 1, 'cum': 27, 'snatch': 5, 'poon': 1, 'fag': 3}
+ass: 325
+arse: 9
+bastard: 1
+hoe: 16
+vag: 17
+tit: 75
+cock: 2
+dick: 1
+muff: 2
+tard: 6
+spic: 24
+asses: 11
+damn: 7
+queer: 1
+cum: 27
+snatch: 5
+poon: 1
+fag: 3
 
 sowing.txt
-{'ass': 61, 'arse': 1, 'hoe': 1, 'hard on': 2, 'tit': 22, 'vag': 3, 'snatch': 1, 'spic': 2, 'asses': 4, 'queer': 1, 'cum': 2, 'poon': 1}
+ass: 61
+arse: 1
+hoe: 1
+hard on: 2
+tit: 22
+vag: 3
+snatch: 1
+spic: 2
+asses: 4
+queer: 1
+cum: 2
+poon: 1
+
+
 
 the_lamplighter.txt
-{'ass': 359, 'anus': 2, 'hoe': 13, 'prick': 1, 'arse': 5, 'tit': 58, 'pussy': 3, 'vag': 6, 'tard': 1, 'spic': 15, 'asses': 5, 'queer': 11, 'hard on': 1, 'cum': 44, 'snatch': 12, 'poon': 1}
+ass: 359
+anus: 2
+hoe: 13
+prick: 1
+arse: 5
+tit: 58
+pussy: 3
+vag: 6
+tard: 1
+spic: 15
+asses: 5
+queer: 11
+hard on: 1
+cum: 44
+snatch: 12
+poon: 1
 
 trial_and_triumph.txt
-{'ass': 69, 'arse': 3, 'niggers': 3, 'pussy': 1, 'dick': 2, 'nigger': 12, 'negro': 24, 'vag': 1, 'spic': 1, 'asses': 1, 'tit': 13, 'mick': 2, 'queer': 1, 'cum': 8}
+ass: 69
+arse: 3
+niggers: 3
+pussy: 1
+dick: 2
+nigger: 12
+negro: 24
+vag: 1
+spic: 1
+asses: 1
+tit: 13
+mick: 2
+queer: 1
+cum: 8
 
 uncle_toms_cabin.txt
-{'pussy': 5, 'queer': 1, 'hoe': 25, 'niggers': 67, 'dick': 3, 'vag': 23, 'tard': 2, 'hard on': 8, 'asses': 19, 'damn': 2, 'muff': 2, 'cum': 29, 'humping': 1, 'ass': 532, 'anus': 1, 'skeet': 1, 'negro': 54, 'snatch': 3, 'spic': 13, 'poon': 1, 'coon': 6, 'chink': 1, 'arse': 29, 'cracker': 2, 'tit': 62, 'nigger': 109, 'cock': 5}
+pussy: 5
+queer: 1
+hoe: 25
+niggers: 67
+dick: 3
+vag: 23
+tard: 2
+hard on: 8
+asses: 19
+
+damn: 2
+muff: 2
+cum: 29
+humping: 1
+ass: 532
+anus: 1
+skeet: 1
+negro: 54
+snatch: 3
+spic: 13
+poon: 1
+coon: 6
+chink: 1
+arse: 29
+cracker: 2
+tit: 62
+nigger: 109
+cock: 5
 
 what_katy_did.txt
-{'ass': 55, 'hoe': 11, 'prick': 4, 'vag': 1, 'hard on': 1, 'tit': 5, 'cock': 1, 'cracker': 1, 'muff': 2, 'tard': 2, 'spic': 4, 'asses': 5, 'queer': 24, 'kike': 10, 'cum': 1, 'poon': 5, 'fag': 1, 'spick': 1}
+ass: 55
+hoe: 11
+prick: 4
+vag: 1
+hard on: 1
+tit: 5
+cock: 1
+cracker: 1
+muff: 2
+tard: 2
+spic: 4
+asses: 5
+queer: 24
+kike: 10
+cum: 1
+poon: 5
+fag: 1
+spick: 1
 
 woman_in_19th.txt
-{'ass': 317, 'anus': 1, 'clit': 2, 'hoe': 10, 'vag': 13, 'arse': 10, 'tit': 100, 'dick': 1, 'muff': 1, 'negro': 2, 'tard': 1, 'spic': 8, 'asses': 12, 'homo': 1, 'damn': 1, 'guido': 1, 'cum': 48, 'snatch': 1, 'whore': 1}
+ass: 317
+anus: 1
+clit: 2
+hoe: 10
+vag: 13
+arse: 10
+tit: 100
+dick: 1
+muff: 1
+negro: 2
+tard: 1
+spic: 8
+asses: 12
+homo: 1
+damn: 1
+guido: 1
+cum: 48
+snatch: 1
+whore: 1
