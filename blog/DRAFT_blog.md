@@ -67,7 +67,9 @@ Here's the breakdown of sentiment by book:
 
 Unsurprisingly, 12 out of 14 of the books I analyzed were Negative or Very Negative. Rough times in the 19th century!
 
-Next, I decided it might be interesting to see what popped up with Profanity Detection. [add more content once algo is updated]
+Next, I decided it might be interesting to see what popped up with Profanity Detection.
+
+[insert char graphic here]
 
 Now, you've read though all this and you've seen my results, you might be thinking to yourself that you don't know how to do natural language processing so maybe this will be something you put on a project list and try out later. The most amazing part of this project that I haven't told you yet is this secret: every single one of the scripts that I wrote to do NLP and text analysis was **under 30 lines of code.**
 
