@@ -1,0 +1,28 @@
+little_women.txt
+
+PLAYING PILGRIMS "Christmas won't be Christmas without any presents," grumbled Jo, lying on the rug. "It's so dreadful to be poor!" sighed Meg, looking down at her old dress. The four young faces on which the firelight shone brightened at the cheerful words, but darkened again as Jo said sadly, "We haven't got Father, and shall not have him for a long time." She didn't say "perhaps never," but each silently added it, thinking of Father far away, where the fighting was.
+
+ruth_hall.txt
+
+The old church clock rang solemnly out on the midnight air. Ruth started. For hours she had sat there, leaning her cheek upon her hand, and gazing through the open space between the rows of brick walls, upon the sparkling waters of the bay, glancing and quivering 'neath the moon-beams.
+
+rutledge.txt
+
+It was the gloomy twilight of a gloomy November day; dark and leaden clouds were fast shutting out every lingering ray of daylight; and the wind, which moaned dismally around the house, was tossing into mad antics the leaves which strewed the playground. Catharine's was innocent; a dull black stove, more or less gigantic, according to the size of the apartment, gloomed in every one, and affected favorably the thermometer, if not the imagination. From them I was to be severed to-morrow, as was expected, and "It might be for years, and it might be for ever,"as Nelly had just said, choking up on the last sentence.
+
+the_lamplighter.txt
+
+It was growing dark in the city. The house-door behind her was close to the side-walk; and the step on which she sat was so low that her little unshod feet rested on the cold bricks. It was a chilly evening in November, and a light fall of snow had made the narrow streets and dark lanes dirtier and more cheerless than ever.
+
+uncle_toms_cabin.txt
+
+UNCLE TOM'S CABIN or Life among the Lowly By Harriet Beecher Stowe VOLUME I CHAPTER I In Which the Reader Is Introduced to a Man of Humanity Late in the afternoon of a chilly day in February, two gentlemen were sitting alone over their wine, in a well-furnished dining parlor, in the town of P----, in Kentucky. For convenience sake, we have said, hitherto, two gentlemen. He was a short, thick-set man, with coarse, commonplace features, and that swaggering air of pretension which marks a low man who is trying to elbow his way upward in the world.
+
+what_katy_did.txt
+
+CHAPTER I THE LITTLE CARRS I was sitting in the meadows one day, not long ago, at a place where there was a small brook. Just opposite me was a clump of green rushes, with dark velvety spikes, and among them one single tall, red cardinal flower, which was bending over the brook as if to see its own beautiful face in the water. These were the words--"Katy did." "Katy didn't." "She did." "She didn't." "She did." "She didn't." "Did." "Didn't." I think they must have repeated them at least a hundred times.
+
+woman_in_19th.txt
+
+"Frailty, thy name is WOMAN." "The Earth waits for her Queen." The connection between these quotations may not be obvious, but it is strict. He feels himself called to understand and aid Nature, that she may, through his intelligence, be raised and interpreted; to be a student of, and servant to, the universe-spirit; and king of his planet, that, as an angelic minister he may bring it into conscious harmony with the law of that spirit. In clear, triumphant moments, many times, has rung through the spheres the prophecy of his jubilee; and those moments, though past in time, have been translated into eternity by thought; the bright signs they left hang in the heavens, as single stars or constellations, and, already, a thickly sown radiance consoles the wanderer in the darkest night.
+
