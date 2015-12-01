@@ -45,7 +45,7 @@ Haven't read any of the books? Don't worry! The first algorithm I ran on the tex
 
 Using the [AutoTag algorithm](https://algorithmia.com/algorithms/nlp/AutoTag), I set out to discover if there would be a difference in the topics we'd find between the two author demographics. The Autotag algorithm uses a variant of Latent Dirichlet allocation and returns a set of keywords that reprensent the topics in the text. I then took each of the topics returned by the algorithm and classified them into various categories or themes to see if we could find some common threads.
 
-[insert graph img here]
+[insert autotag graph img here]
 
 I had suspected that the second set of books would have more domestic related themes, but I was mostly unsurprised that there were no autotagged keywords about race or slavery in that set. Interestingly, specific names as keywords were fairly frequent in both sets, averaging 4.8 out of 8 topics for set one and 5.7 of the topics in set two.
 
@@ -67,11 +67,17 @@ Here's the breakdown of sentiment by book:
 
 Unsurprisingly, 12 out of 14 of the books I analyzed were Negative or Very Negative. Rough times in the 19th century!
 
-Next, I decided it might be interesting to see what popped up with Profanity Detection.
+Next, I decided it might be interesting to see what popped up with [Profanity Detection](https://algorithmia.com/algorithms/nlp/ProfanityDetection). While getting the data into the algorithm and writing the results back to a file was easy, it turns out that profanity detection requires a lot of double checking by hand. I knew that some words that came up were not really profane back then; words like "queer", "pussy", and "muff" were innocent in the context of these 19th century texts.
 
-[insert char graphic here]
+Interestingly, the frequency of racial profanity of the two data sets ended up being relatively similar:
 
-Now, you've read though all this and you've seen my results, you might be thinking to yourself that you don't know how to do natural language processing so maybe this will be something you put on a project list and try out later. The most amazing part of this project that I haven't told you yet is this secret: every single one of the scripts that I wrote to do NLP and text analysis was **under 30 lines of code.**
+[insert profanity graphic here]
+
+Of course running the algorithm doesnt give you the full picture since in our second set of data about 95% of the racial profanity came from one book: Uncle Tom's Cabin. This is unsurprising since it's the only work in our second set of books that was written by an aboloitionist. However, we still don't quite get the full picture about profanity in these books: many of the words used were not considered slurs back then, and additionally, within the use of dialogue this kind of language takes on a different dimension. The thing we can learn from an algorithm such as Profanity Detection is that there is a very stark different in who these books focused on as main characters and what kind of world they lived in. Four of the seven books written by white authors had zero instances of these words.
+
+---
+
+Now, you've read though all this and you've seen the results from all these different algorithms, you might be thinking to yourself that you don't know how to do natural language processing so maybe this will be something you put on a project list and try out later. The most amazing part of this project that I haven't told you yet is this: every single one of the scripts that I wrote to do NLP and text analysis was **under 30 lines of code.**
 
 Check out the script I wrote for running the AutoTag algorithm:
 
