@@ -3,24 +3,21 @@ import os
 import re
 from random import randint
 
-client             	= Algorithmia.client('simG4c7kU+Seay4VpjAP3MSovuR1')
-text_from_trigram  	= client.algo('/lizmrush/GenerateParagraphFromTrigram')
-book_title 		 	= 'set_two_book.txt'
+client            	= Algorithmia.client('simG4c7kU+Seay4VpjAP3MSovuR1')
+text_from_trigram	= client.algo('/lizmrush/GenerateParagraphFromTrigram')
+trigrams_file 		= "data://.algo/ngram/GenerateTrigramFrequencies/temp/all-trigrams.txt"
 
-trigrams_file = "data://.algo/ngram/GenerateTrigramFrequencies/temp/set-two-trigrams.txt"
+book_title	 		= 'full_book.txt'
+book 				= ''
+book_word_length 	= 50000
 
-book = ''
-word_count = len(re.findall(r'\w+', book))
-
-print word_count
-
-while len(re.findall(r'\w+', book)) < 500:
-  print "Generating new paragraph"
+while len(re.findall(r'\w+', book)) < book_word_length:
+  print "Generating new paragraph..."
   input = [trigrams_file, "xxBeGiN142xx", "xxEnD142xx", (randint(1,9))]
   new_paragraph = text_from_trigram.pipe(input)
   book += new_paragraph
-  book += '\n'
-  print "updated word_count:"
+  book += '\n\n'
+  print "Updated word count:"
   print len(re.findall(r'\w+', book))
 
 with open(book_title, 'w') as f:
@@ -29,4 +26,4 @@ with open(book_title, 'w') as f:
 f.close()
 
 print "Done!"
-
+print "You book is now complete. Give " + book_title + " a read now!"

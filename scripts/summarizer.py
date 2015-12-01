@@ -5,8 +5,8 @@ import json
 client = Algorithmia.client('simG4c7kU+Seay4VpjAP3MSovuR1')
 algo = client.algo('nlp/Summarizer')
 
-rootdir = './clean_books/set_one/'
-output_file = 'set_one_summarizer_results.txt'
+rootdir = './clean_books/set_two/'
+output_file = 'set_two_summarizer_results.txt'
 results = ''
 
 for subdir, dirs, files in os.walk(rootdir):
@@ -22,7 +22,7 @@ for subdir, dirs, files in os.walk(rootdir):
 with open(output_file, 'w') as f:
    f.write(results)
 
-f.close()
+f.close()	
 
 print "Done!"
 

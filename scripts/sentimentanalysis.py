@@ -2,12 +2,12 @@ import Algorithmia
 import os
 import json
 
-client = Algorithmia.client('simG4c7kU+Seay4VpjAP3MSovuR1')
-algo = client.algo('nlp/sentimentanalysis')
+client	= Algorithmia.client('simG4c7kU+Seay4VpjAP3MSovuR1')
+algo 	= client.algo('nlp/sentimentanalysis')
 
-rootdir = './clean_books/set_one/'
+rootdir 	= './clean_books/set_one/'
 output_file = 'set_one_sentiment_results.txt'
-results = ''
+results 	= ''
 
 for subdir, dirs, files in os.walk(rootdir):
   for filename in files:
