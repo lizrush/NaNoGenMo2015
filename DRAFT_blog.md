@@ -120,7 +120,46 @@ The [book preivew from Set Two](https://github.com/lizrush/NaNoGenMo2015/blob/ma
 
 The most interesting difference I found in the text generated from these different data sets was that the text from Set Two sounded much more formal. The first set of books, the ones written by Black authors, tended to have much more dialogue written in such a way as to let the reader hear the accents and dialects of the time. These words became part of the model to generate text, so as you can see in the first sentence of the Set One preview, the algorithm generated text that still makes a lot of sense even with words that are intended to showcase an accent.
 
-In the end, I decided to create a trigram model based on both sets of text and use that to generate my full length novel. I didn't have to do any fancy code, I merely made another API call to the [Generate Trigram Frequencies](https://algorithmia.com/algorithms/ngram/GenerateTrigramFrequencies) algorithm, this time passing in the entirety of my data set.
+In the end, I decided to create a trigram model based on both sets of text and use that to generate my full length novel. I didn't have to do any fancy code, I merely made another API call to the [Generate Trigram Frequencies](https://algorithmia.com/algorithms/ngram/GenerateTrigramFrequencies) algorithm, this time passing in the entirety of my data set. Then, to generate my novel, I wrote a quick script that calls into another algorithm: [Generate Paragraph From Trigram](https://algorithmia.com/algorithms/lizmrush/GenerateParagraphFromTrigram). This algorithm uses the trained trigram model to generate paragraphs of text. Since NaNoGenMo requires the book to be at least 50,000 words, I simply wrote a loop that calls the Generate Paragraph algorithm until the total word count of the book reaches the goal:
 
+```
+import Algorithmia
+import os
+import re
+from random import randint
+
+client              = Algorithmia.client('my_api_key')
+text_from_trigram = client.algo('/lizmrush/GenerateParagraphFromTrigram')
+trigrams_file     = "data://.algo/ngram/GenerateTrigramFrequencies/temp/all-trigrams.txt"
+
+book_title      = 'full_book.txt'
+book        = ''
+book_word_length  = 50000
+
+while len(re.findall(r'\w+', book)) < book_word_length:
+  print "Generating new paragraph..."
+  input = [trigrams_file, "xxBeGiN142xx", "xxEnD142xx", (randint(1,9))]
+  new_paragraph = text_from_trigram.pipe(input)
+  book += new_paragraph
+  book += '\n\n'
+  print "Updated word count:"
+  print len(re.findall(r'\w+', book))
+
+with open(book_title, 'w') as f:
+    f.write(book.encode('utf8'))
+
+f.close()
+
+print "Done!"
+print "You book is now complete. Give " + book_title + " a read now!"
+```
+
+Even with extra new lines for readability, the code I needed to generate an entire novel with Algorithmia was still under 30 lines! And I ended up generating a really unique, interesting novel without getting lost in the highly technical parts of natural language generation. Now, the text isn't perfect: sometimes the sentences don't quite sound right and there isn't really any sort of story arch, but for such simple code I think it's pretty good! My favorite part about using 19th century texts as the data set was that sometimes you can't tell if the generated text is hard to read because it's generated and doesn't make much sense or because it sounds so old-timey. My book includes the following gems that just might pass as human-written text:
+
+>I have said of human life when I saw the Ohio river, that you shall work.
+
+>Still, falsehood may be hearing you. She only 'spects something. Them curls may make a noise you shall not.
+
+You can read the book, or rather, attempt to read the book, [online](http://lizrush.github.io/NaNoGenMo2015) or you can download it [from the repo](https://github.com/lizrush/NaNoGenMo2015/blob/master/results/generated%20texts/full_book.txt).
 
 It's mindblowingly fast and simple to get the power of these algorithms into your hands once they are behind a simple API call. You can see all the other scripts I wrote in the [GitHub repo](https://github.com/lizrush/NaNoGenMo2015) for this project. If you browse around, you'll see that each script is nearly identical. The only real changes I had to make were replacing the algorithm I was calling and what I named the files to write results to! The Algorithmia platform is an incredibly powerful tool. Instead of spending days, weeks, months learning how to code my own natural language processing and text analysis algorithms, I could just pop my data into a variety of algorithms with simple API calls. No sweat, just results.
