@@ -18,8 +18,7 @@ Here at Algorithmia, we have a wide variety of algorithms that are a perfect fit
 
 I chose the texts I wanted to work with based on two things: availability in the public domain and to have an interesting author demographic. While there are tons of NaNoGenMo books out there that are based on other texts, I wanted to find a really unique set of texts to base my novel on. I also developed an interest in 19th century American literature after reading Uncle Tom's Cabin when I was 12. Luckily for me, Project Gutenberg is home to many novels and autobiographies that fit this intersection of interests!
 
-First step: compile a corpus of texts. I chose to go with two sets of 7 books to compare. The first set was composed of primarily slave and emanicpation narratives from Black female authors. While digging around in these texts, I realized that books as seemingly disparate as Little Women were published at the same time. Somehow I have never really thought about how such drastically different worlds were becoming exposed in what we now think of as classic American literature, so I decided it would be interested to compare. The second set of texts are all from white female authors and published around the mid-19th century. 
-
+First step: compile a corpus of texts. I chose to go with two sets of 7 books to compare. The first set was composed of primarily slave and emanicpation narratives from Black female authors. While digging around in these texts, I realized that books as seemingly disparate as Little Women were published at the same time. Somehow I have never really thought about how such drastically different worlds were becoming exposed in what we now think of as classic American literature, so I decided it would be interested to compare. The second set of texts are all from white female authors and published around the mid-19th century.
 
 Set one:
 * 1861 - Incidents in the Life of a Slave Girl by Harriet Jacobs
@@ -40,60 +39,43 @@ Set two:
 * 1869 to 1870 (published in serial form) - An Old Fashioned Girl by Louisa May Alcott
 * 1872 - What Katy Did by Susan Coolidge
 
-Before I started work on generating my own novel based on these texts, I rolled up my sleeves and got to work on analyzing them. The algorithmia platform is already full of many text analysis algorithms, so instead of getting lost in learning natural language processing, it was as simple as choosing an algorithm, passing in my texts, and comparing the results.
+Before I started work on generating my own novel based on these texts, I rolled up my sleeves and got to work on analyzing them. The algorithmia platform is already full of many text analysis algorithms, so instead of getting lost in learning natural language processing from scratch, it was as simple as choosing an algorithm, passing in my texts, and comparing the results.
+
+Haven't read any of the books? Don't worry! First algorithm I ran on the texts was [Summarizer](https://algorithmia.com/algorithms/nlp/Summarizer). This algorithm is pretty straightforward--input text, get back key sentences based on frequency of topics and terms. Read the summaries of [Set One](https://github.com/lizrush/NaNoGenMo2015/blob/master/results/set_one_summarizer_results.txt) and [Set Two](https://github.com/lizrush/NaNoGenMo2015/blob/master/results/set_two_summarizer_results.txt) if you need a literary refresher!
+
+Using the [AutoTag algorithm](https://algorithmia.com/algorithms/nlp/AutoTag), I set out to discover if there would be a difference in the topics we'd find between the two author demographics. The Autotag algorithm uses a variant of Latent Dirichlet allocation and returns a set of keywords that reprensent the topics in the text. I then took each of the topics returned  by the algorithm and classified them into various categories or themes to see if we could find some common threads.
+
+[insert graph img here]
+
+I had suspected that the second set of books would have more domestic related themes, but I was mostly unsurprised that there were no autotagged keywords about race or slavery in that set. Interestingly, specific names as keywords were fairly frequent in both sets, averaging 4.8 out of 8 topics for set one and 5.7 of the topics in set two.
+
+While this algorithm gives us some interesting insights into our texts, it can't tell us everything and sometimes it can even trick you. For example, I grew suspicious of Sowing & Reaping when the AutoTag algorithm returned that one of the topics was "romaine". I suspected that this book did not in fact focus on a type of lettuce as a main topic. Since I hadn't read this specific book, I looked it up--turned out to be the last name of a main character!
+
+After running the AutoTag algorithm on my data sets, I decided it check out [Sentiment Analysis](https://algorithmia.com/algorithms/nlp/SentimentAnalysis). This algorithm uses text analysis, natural language processing, and computational linguistics to identify subjective information in text. It's also known as opinion mining. The algorithm I used returns a rating of Very Negative, Negative, Neutral, Positive or Very Positive.
+
+Here's the breakdown of sentiment by book:
+Set One:
+* Incidents in the Life of a Slave Girl: Negative
+* Trial and Triumph: Negative
+* From the Darkness Cometh the Light, or, Struggles for Freedom: Negative
+* Sowing and Reaping: Negative
+* Minnie's Sacrifice: Negative
+* Behind the Scenes: Positive
+* Iola Leroy, or Shadows Uplifted: Negative
+
+Set Two:
+* Woman in the Nineteenth Century: Negative
+* Uncle Tom's Cabin: Negative
+* The Lamplighter: Negative
+* Ruth Hall: A Domestic Tale of the Present Time: Neutral
+* Rutledge: Very Negative
+* Little Women: Negative
+* What Katy Did: Negative
+
+Unsurprisingly, 12 out of 14 of the books I analyzed were Negative or Very Negative. Rough times in the 19th century!
 
 
-Using the [AutoTag algorithm](https://algorithmia.com/algorithms/nlp/AutoTag), I set out to discover if there would be a difference in the topics we'd find between the two author demographics. The Autotag algorithm uses a variant of Latent Dirichlet allocation and returns a set of keywords that reprensent the topics in the text. I then took each of the topics returned  by the algorithm and classified them into various categories or themes to see if we could find some common threads. 
 
-I found out that 
-
-set one:
-female person: 16
-family person: 8
-home-related noun: 5
-slavery/race: 4
-people/names: average of 4.5 out of 8
-
-set two: 
-female person: 28
-family person: 4
-home-related noun: 2
-slavery/race: 0
-people/names: average of 5.7 out of 8
-
-While this algorithm gives us some interesting insights into our texts, it can't tell us everything and sometimes it can even trick you. For example, I grew suspicious of Sowing & Reaping when the AutoTag algorithm returned that one of the topics was "romaine". Since I hadn't read this specific book, I looked it up--turned out to be the last name of a main character! 
-
-Sentiment analysis
-behind_the_scenes.txt
-3
-from_the_darkness.txt
-1
-incidents.txt
-1
-iola_leroy_harper.txt
-1
-little_women.txt
-1
-minnies_sacrifice.txt
-1
-prophet_smoky_mountains.txt
-3
-ruth_hall.txt
-2
-rutledge.txt
-0
-sowing.txt
-1
-the_lamplighter.txt
-1
-trial_and_triumph.txt
-1
-uncle_toms_cabin.txt
-1
-what_katy_did.txt
-1
-woman_in_19th.txt
-1
 
 
 
