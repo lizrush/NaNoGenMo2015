@@ -21,7 +21,7 @@ while len(re.findall(r'\w+', book)) < book_word_length:
   print len(re.findall(r'\w+', book))
 
 with open(book_title, 'w') as f:
-    f.write(book)
+    f.write(book.encode('utf8'))
 
 f.close()
 
