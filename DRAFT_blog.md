@@ -54,23 +54,16 @@ While this algorithm gives us some interesting insights into our texts, it can't
 After running the AutoTag algorithm on my data sets, I decided it check out [Sentiment Analysis](https://algorithmia.com/algorithms/nlp/SentimentAnalysis). This algorithm uses text analysis, natural language processing, and computational linguistics to identify subjective information in text. It's also known as opinion mining. The algorithm I used returns a rating of Very Negative, Negative, Neutral, Positive or Very Positive.
 
 Here's the breakdown of sentiment by book:
-Set One:
-* Incidents in the Life of a Slave Girl: Negative
-* Trial and Triumph: Negative
-* From the Darkness Cometh the Light, or, Struggles for Freedom: Negative
-* Sowing and Reaping: Negative
-* Minnie's Sacrifice: Negative
-* Behind the Scenes: Positive
-* Iola Leroy, or Shadows Uplifted: Negative
 
-Set Two:
-* Woman in the Nineteenth Century: Negative
-* Uncle Tom's Cabin: Negative
-* The Lamplighter: Negative
-* Ruth Hall: A Domestic Tale of the Present Time: Neutral
-* Rutledge: Very Negative
-* Little Women: Negative
-* What Katy Did: Negative
+| Set One Books | Sentiment | Set Two Books | Sentiment |
+|---|---|---|---|
+|Incidents in the Life of a Slave Girl | Negative|Woman in the Nineteenth Century|Negative|
+|Trial and Triumph|Negative|Uncle Tom's Cabin|Negative|
+|From the Darkness Cometh the Light|Negative|The Lamplighter|Negative|
+|Sowing and Reaping|Negative|Ruth Hall|Neutral|
+|Minnie's Sacrifice|Negative|Rutledge|Very Negative|
+|Behind the Scenes|Positive|Little Women|Negative|
+|Iola Leroy|Negative| What Katy Did|Negative|
 
 Unsurprisingly, 12 out of 14 of the books I analyzed were Negative or Very Negative. Rough times in the 19th century!
 
