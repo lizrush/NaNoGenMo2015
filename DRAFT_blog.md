@@ -14,7 +14,7 @@ In the NaNoGenMo world, "novel" is pretty loosely defined. According to the rule
 
 Novel generation can be much more complicated than it appears from the outside. [Some books](https://github.com/dariusk/NaNoGenMo-2014/issues/51) integrate with social media by pulling text from twitter to generate dialogue, [others](https://github.com/samcoppini/Definition-book) go down a recursive rabbithole, and some even generate [graphic novels](http://gregborenstein.com/comics/generated_detective/1/).
 
-Here at Algorithmia, we have a wide variety of algorithms that are a perfect fit for NaNoGenMo. Because I don't have any background in natural language processing or computational linguistics, I found it was easy to combine algorithms to not only help me generate my novel, but gain insights on the texts I used as a basis and the result.
+Algorithmia is home to a wide variety of algorithms that are a perfect fit for NaNoGenMo. Because I don't have any background in natural language processing or computational linguistics, I found it was easy to combine algorithms that not only helped me generate my novel, but gave me insights on the texts I used as a basis and the result.
 
 I chose the texts I wanted to work with based on two things: availability in the public domain and to have an interesting author demographic. While there are tons of NaNoGenMo books out there that are based on other texts, I wanted to find a really unique set of texts to base my novel on. I also developed an interest in 19th century American literature after reading Uncle Tom's Cabin when I was 12. Luckily for me, Project Gutenberg is home to many novels and autobiographies that fit this intersection of interests!
 
@@ -41,9 +41,9 @@ Set two:
 
 Before I started work on generating my own novel based on these texts, I rolled up my sleeves and got to work on analyzing them. The algorithmia platform is already full of many text analysis algorithms, so instead of getting lost in learning natural language processing from scratch, it was as simple as choosing an algorithm, passing in my texts, and comparing the results.
 
-Haven't read any of the books? Don't worry! First algorithm I ran on the texts was [Summarizer](https://algorithmia.com/algorithms/nlp/Summarizer). This algorithm is pretty straightforward--input text, get back key sentences based on frequency of topics and terms. Read the summaries of [Set One](https://github.com/lizrush/NaNoGenMo2015/blob/master/results/set_one_summarizer_results.txt) and [Set Two](https://github.com/lizrush/NaNoGenMo2015/blob/master/results/set_two_summarizer_results.txt) if you need a literary refresher!
+Haven't read any of the books? Don't worry! The first algorithm I ran on the texts was [Summarizer](https://algorithmia.com/algorithms/nlp/Summarizer). This algorithm is pretty straightforward--input text, get back key sentences based on frequency of topics and terms. Read the summaries of [Set One](https://github.com/lizrush/NaNoGenMo2015/blob/master/results/set_one_summarizer_results.txt) and [Set Two](https://github.com/lizrush/NaNoGenMo2015/blob/master/results/set_two_summarizer_results.txt) if you need a literary refresher!
 
-Using the [AutoTag algorithm](https://algorithmia.com/algorithms/nlp/AutoTag), I set out to discover if there would be a difference in the topics we'd find between the two author demographics. The Autotag algorithm uses a variant of Latent Dirichlet allocation and returns a set of keywords that reprensent the topics in the text. I then took each of the topics returned  by the algorithm and classified them into various categories or themes to see if we could find some common threads.
+Using the [AutoTag algorithm](https://algorithmia.com/algorithms/nlp/AutoTag), I set out to discover if there would be a difference in the topics we'd find between the two author demographics. The Autotag algorithm uses a variant of Latent Dirichlet allocation and returns a set of keywords that reprensent the topics in the text. I then took each of the topics returned by the algorithm and classified them into various categories or themes to see if we could find some common threads.
 
 [insert graph img here]
 
@@ -74,7 +74,43 @@ Set Two:
 
 Unsurprisingly, 12 out of 14 of the books I analyzed were Negative or Very Negative. Rough times in the 19th century!
 
+Next, I decided it might be interesting to see what popped up with Profanity Detection. [finsih talking baotu this here]
 
+Now, you've read though all this and you've seen my results, you might be thinking to yourself that you don't know how to do natural language processing so maybe this will be something you put on a project list and try out later. The most amazing part of this project that I haven't told you yet is this secret: every single one of these scripts that I wrote to do NLP and text analysis was **under 30 lines of code.**
+
+Check out the script I wrote for running the AutoTag algorithm:
+
+```
+import Algorithmia
+import os
+import json
+
+client = Algorithmia.client('my_api_key')
+algo = client.algo('nlp/AutoTag/0.1.4')
+
+rootdir = './clean_books/set_one/'
+output_file = 'set_one_autotag_results.txt'
+results = ''
+
+for subdir, dirs, files in os.walk(rootdir):
+  for filename in files:
+    with open(rootdir + filename, 'r') as content_file:
+      input = content_file.read()
+      print "Autotagging " + filename
+      results += filename + "\n\n"
+      results += json.dumps(algo.pipe(input))
+      results += "\n\n"
+
+
+with open(output_file, 'w') as f:
+   f.write(results)
+
+f.close()
+
+print "Done!"
+```
+
+It's almost mindblowingly fast and simple to get the power of these algorithms into your hands once they are behind a simple API call.
 
 
 
