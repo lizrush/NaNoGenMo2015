@@ -1,0 +1,27 @@
+behind_the_scenes.txt
+
+{"cum": 1, "negro": 7}
+
+from_the_darkness.txt
+
+{"nigger": 3, "negro": 7}
+
+incidents.txt
+
+{"niggers": 13, "nigger": 12, "damn": 1, "negro": 10, "snatch": 1}
+
+iola_leroy_harper.txt
+
+{"niggers": 9, "nigger": 4, "dick": 3, "negro": 33}
+
+minnies_sacrifice.txt
+
+{"niggers": 4, "nigger": 7, "negro": 17}
+
+sowing.txt
+
+{"snatch": 1, "queer": 1}
+
+trial_and_triumph.txt
+
+{"niggers": 3, "pussy": 1, "dick": 2, "negro": 24, "nigger": 8, "mick": 2, "queer": 1}

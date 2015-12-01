@@ -1,0 +1,28 @@
+little_women.txt
+
+{"dicks": 1, "cock": 2, "pussies": 2, "queer": 31}
+
+ruth_hall.txt
+
+{"hoe": 2, "niggers": 1, "pussy": 1, "spick": 1, "nigger": 1, "damn": 1, "queer": 5}
+
+rutledge.txt
+
+{"bastard": 1, "dick": 1}
+
+the_lamplighter.txt
+
+{"pussy": 2, "snatch": 2, "queer": 9}
+
+uncle_toms_cabin.txt
+
+{"niggers": 65, "pussy": 5, "dick": 1, "negro": 26, "snatch": 3, "nigger": 35, "queer": 1, "cum": 2, "cock": 1, "coon": 5}
+
+what_katy_did.txt
+
+{"spick": 1, "muff": 1, "prick": 1, "queer": 20}
+
+woman_in_19th.txt
+
+{"whore": 1, "negro": 2, "snatch": 1}
+
