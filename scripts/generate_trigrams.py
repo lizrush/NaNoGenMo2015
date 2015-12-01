@@ -1,7 +1,7 @@
 import Algorithmia
 import os
 
-client            = Algorithmia.client('simG4c7kU+Seay4VpjAP3MSovuR1')
+client            = Algorithmia.client('YOUR_API_KEY_HERE')
 sentence_split    = client.algo('StanfordNLP/SentenceSplit/0.1.0')
 generate_trigrams	= client.algo('ngram/GenerateTrigramFrequencies/0.1.1')
 trigram_file_name	= "set-one-trigrams.txt"

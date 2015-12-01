@@ -2,7 +2,7 @@ import Algorithmia
 import os
 import json
 
-client	= Algorithmia.client('simG4c7kU+Seay4VpjAP3MSovuR1')
+client	= Algorithmia.client('YOUR_API_KEY_HERE')
 algo 		= client.algo('nlp/ProfanityDetection')
 
 rootdir 		= './clean_books/set_one/'
@@ -13,7 +13,7 @@ for subdir, dirs, files in os.walk(rootdir):
   for filename in files:
     with open(rootdir + filename, 'r') as content_file:
       input = content_file.read()
-      print "Detecting profanity in " + filename 
+      print "Detecting profanity in " + filename
       results += filename + "\n\n"
       results += json.dumps(algo.pipe(input))
       results += "\n\n"

@@ -3,7 +3,7 @@ import os
 import re
 from random import randint
 
-client             	= Algorithmia.client('simG4c7kU+Seay4VpjAP3MSovuR1')
+client             	= Algorithmia.client('YOUR_API_KEY_HERE')
 text_from_trigram  	= client.algo('/lizmrush/GenerateParagraphFromTrigram')
 paragraph_length 	= (randint(1,9))
 
